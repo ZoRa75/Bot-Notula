@@ -205,15 +205,3 @@ Client.on("message", message => {
 
 
 Client.login(process.env.BOT_TOKEN)
-© 2022 GitHub, Inc.
-Terms
-Privacy
-Security
-Status
-Docs
-Contact GitHub
-Pricing
-API
-Training
-Blog
-About
