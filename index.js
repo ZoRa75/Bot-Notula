@@ -29,8 +29,8 @@ Client.on("messageCreate", message => {
     if(message.content === prefix + "help"){
         const embed = new Discord.MessageEmbed()
             .setColor("#ff931e")
-            .setAuthor("Commandes du bot TrixaMC", "https://media.discordapp.net/attachments/867390142314446899/886594953902428170/pack_icon.png?width=293&height=293",)
-            .addField('**__JOUEUR__**', '> .ip', true)
+            .setAuthor("Commandes du bot Notula", "https://media.discordapp.net/attachments/867390142314446899/886594953902428170/pack_icon.png?width=293&height=293",)
+            .addField('**__JOUEUR__**', '> $ip', true)
         message.channel.send({ embeds: [embed]});
     }
 
