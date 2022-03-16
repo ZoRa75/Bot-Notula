@@ -42,19 +42,7 @@ Client.on("messageCreate", message => {
       .setURL(" https://minecraftpocket-servers.com/server/115686/vote/")
 
        message.channel.send({ embeds: [embed]});
-  }
-  //$say
-  else if(message.content.startsWith(prefix + 'say')) {
-      if(message.author.bot) return;
-// Add User Permissions
-if (!message.member.roles.cache.has('947272996366716970')) return message.delete();
-      const SayMessage = message.content.slice(4).trim();
-
-    let embed = new Discord.MessageEmbed()
-    .setDescription(SayMessage)
-    .setColor('#ff931e')
-
-    message.channel.send({ embeds: [embed] }) 
+  
   }
 });
 
@@ -201,6 +189,5 @@ if (!message.member.roles.cache.has('831276105809395783')) return message.delete
       message.channel.send({ embeds: [embed] }) 
   }
 });
-
 
 Client.login(process.env.BOT_TOKEN)
