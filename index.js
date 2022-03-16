@@ -190,4 +190,4 @@ if (!message.member.roles.cache.has('831276105809395783')) return message.delete
   }
 });
 
-Client.login(process.env.BOT_TOKEN)
+Client.login(process.env.token)
