@@ -10,8 +10,8 @@ const prefix = "$";
 
 Client.on("ready", () => {
   console.log("bot fonctionnel !")
-  Client.user.setActivity("NotulaKitmap Bestkitmap");
-  Client.user.setStatus('online'); 
+  Client.user.setActivity("NotulaKitmap");// WATCHING, LISTENING ou pas type mais url:lien twitch pour STREAMING  
+  Client.user.setStatus('online'); //dnd, invisible, online, idle
 });
 
 Client.on("messageCreate", message => {
@@ -61,13 +61,7 @@ Client.on('message', message => {
         const member = message.guild.member(user);
         // If the member is in the guild
         if (member) {
-          /**
-           * Ban the member
-           * Make sure you run this on a member, not a user!
-           * There are big differences between a user and a member
-           * Read more about what ban options there are over at
-           * https://discord.js.org/#/docs/main/master/class/GuildMember?scrollTo=ban
-           */
+          
           member
             .ban({
               reason: 'Il a enfrein une règle !',
@@ -184,10 +178,11 @@ if (!message.member.roles.cache.has('831276105809395783')) return message.delete
 
       let embed = new Discord.MessageEmbed()
       .setDescription(SayMessage)
-      .setColor('#ff931e')
+      .setColor('#1b1717')
 
       message.channel.send({ embeds: [embed] }) 
   }
 });
 
-Client.login(process.env.token)
+
+Client.login(process.env.BOT_TOKEN)
