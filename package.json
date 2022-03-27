@@ -1,17 +1,6 @@
 {
   "dependencies": {
     "discord": "^0.8.2",
-    "discord.js": "^13.6.0",
-    "f": "^1.4.0",
-    "fs": "^0.0.1-security"
-  },
-  "name": "trixa",
-  "version": "1.0.0",
-  "description": "Bot en dev",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "ZoRa",
-  "license": "ISC"
+    "discord.js": "^13.6.0"
+  }
 }
