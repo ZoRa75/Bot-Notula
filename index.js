@@ -10,7 +10,7 @@ const prefix = "$";
 
 Client.on("ready", () => {
   console.log("bot fonctionnel !")
-  Client.user.setActivity("NotulaKitmap");// WATCHING, LISTENING ou pas type mais url:lien twitch pour STREAMING  
+  Client.user.setActivity(".Soso");// WATCHING, LISTENING ou pas type mais url:lien twitch pour STREAMING  
   Client.user.setStatus('online'); //dnd, invisible, online, idle
 });
 
